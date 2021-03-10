@@ -6,13 +6,21 @@ This application is used for creating and following straight-forward, well-prese
 It will allow users to create their own recipes in a simple, easy-to-use recipe builder. 
 
 ## Requirements
-
 ### Visualization
-
+- Sleek, gray page that includes:
+    - Photo of food
+    - Recipe steps
+    - Ingredients
+    - Calorie info (OPTIONAL)
+    
 ### Functionality
+- Users can search for existing recipes or create their own.
+- Users can use website as a personal "Cookbook" or choose to share their recipe with the world.
+- Users will be able to use "recipe builder" page to create their own recipe pages without being concerned with page formatting.
 
 ## TO-DO List
-
 ### Front-End
+
+- [ ] Build basic recipe example
 
 ### Back-End
