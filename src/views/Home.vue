@@ -1,9 +1,13 @@
 <template>
   <div class="home container-fluid row">
-              <navbar class="row" />
+              
 
-      <div class="col-7 left-side">
+      <div class="col-7">
+        <navbar class="row" />
+        <div class=" left-side">
+
                 <leftside> </leftside>
+        </div>
       </div>
 
       <div class="col-3 right-side">
