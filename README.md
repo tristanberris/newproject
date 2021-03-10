@@ -1,5 +1,7 @@
 # SimpleChef
 
+![SimpleChef example image](https://i.ibb.co/y6Kgn4r/Untitled.png)
+
 Welcome to the SimpleChef application!
 
 This application is used for creating and following straight-forward, well-presented recipes without the bloat of a typical recipe blog.
@@ -21,6 +23,7 @@ It will allow users to create their own recipes in a simple, easy-to-use recipe 
 ## TO-DO List
 ### Front-End
 
-- [ ] Build basic recipe example
+- [ ] Build basic recipe page
+- [ ] 
 
 ### Back-End
