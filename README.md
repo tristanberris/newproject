@@ -1,5 +1,8 @@
 # newproject
 
+## Ideas: 
+-   no idea yet
+
 ## Project setup
 ```
 npm install
