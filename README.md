@@ -1,22 +1,18 @@
-# newproject
+# SimpleChef
 
-## Ideas: 
--   no idea yet
+Welcome to the SimpleChef application!
 
-## Project setup
-```
-npm install
-```
+This application is used for creating and following straight-forward, well-presented recipes without the bloat of a typical recipe blog.
+It will allow users to create their own recipes in a simple, easy-to-use recipe builder. 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Requirements
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Visualization
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Functionality
+
+## TO-DO List
+
+### Front-End
+
+### Back-End
