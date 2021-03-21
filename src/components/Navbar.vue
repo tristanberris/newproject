@@ -47,6 +47,8 @@ export default {};
   background-color: #212529;
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
 }
 a{
   color: white;
