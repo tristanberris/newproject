@@ -10,6 +10,7 @@
 <script>
 
 import Home from "./views/Home"
+
 export default {
     components: {
     Home
@@ -18,12 +19,18 @@ export default {
 
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  font-family:'Roboto', sans-serif
+
 }
 
 #nav {

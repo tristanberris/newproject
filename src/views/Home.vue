@@ -2,7 +2,7 @@
   <div class="home container-fluid row">
               
 
-      <div class="col-7">
+      <div class="col-9">
         <navbar class="row" />
         <div class=" left-side">
 
@@ -37,10 +37,11 @@ export default {
   background-color: #2A2E32;
   color: white;
   border-radius: 30px;
-  /* margin-left: 60px */
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .right-side {
-  background-color: gray;
+  background-color: #2A2E32;
   color: white;
   border-radius: 30px;
 
