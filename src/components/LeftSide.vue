@@ -1,6 +1,6 @@
 <template>
 <div class="spacing">
-  <img class="pb-3" src="https://picsum.photos/900/300" alt="">
+  <img class="pb-3 banner" src="https://picsum.photos/900/300" alt="">
   <h1 class="p-3">Title Of Recipe</h1>
   <ol>
       <li class="inglist">
@@ -23,7 +23,7 @@ name: "leftside"
 </script>
 
 <style>
-img{
+.banner{
       border-radius: 30px;
 }
 .inglist{

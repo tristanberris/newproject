@@ -59,4 +59,10 @@ a{
   padding-left: 10px;
   padding-right:10px
 }
+.navbar-brand{
+  background-color: #f4403b;
+  padding:10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
 </style>

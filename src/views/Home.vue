@@ -2,16 +2,16 @@
   <div class="home container-fluid row">
               
 
-      <div class="col-9">
-        <navbar class="row" />
-        <div class=" left-side">
+      <div class="col-9 ">
+        <navbar class="row mb-3 mt-1" />
+        <div class=" left-side mb-5">
 
                 <leftside> </leftside>
         </div>
       </div>
 
       <div class="col-3 right-side">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio?
+        <rightside> </rightside>
       </div>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
@@ -22,12 +22,14 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import leftside from "../components/LeftSide.vue";
 import Navbar from "../components/Navbar";
+import rightside from "../components/RightSide.vue";
 export default {
   name: "Home",
   components: {
     HelloWorld,
     leftside,
-    Navbar
+    Navbar,
+    rightside
   }
 };
 </script>
