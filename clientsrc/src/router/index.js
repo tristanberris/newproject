@@ -1,14 +1,24 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Router from 'vue-router'
 import Home from '../views/Home.vue'
+import Create from "../views/Create.vue"
 
-Vue.use(VueRouter)
+
+
+
+Vue.use(Router)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'home',
+    component: Home,
+  },
+  {
+    path: '/:create',
+    name: 'Create',
+
+    component: Create
   },
   {
     path: '/about',
@@ -22,7 +32,7 @@ const routes = [
   }
 ]
 
-const router = new VueRouter({
+const router = new Router({
   routes
 })
 

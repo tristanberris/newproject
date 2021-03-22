@@ -4,16 +4,17 @@
 
       <home class="row home" />
 
-
   </div>
 </template>
 <script>
 
 import Home from "./views/Home"
+import Create from "./views/Create.vue"
 
 export default {
     components: {
-    Home
+    Home,
+    Create
   }
 }
 

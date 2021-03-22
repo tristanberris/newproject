@@ -18,8 +18,12 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Settings</a>
+          <li class="nav-item" :class="{ active: $route.name == 'create' }">
+            <router-link
+              :to="{ name: 'Create' }"
+              class=" nav-link navbar-brand text-light"
+              id="navbar-font"
+            >Create</router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Help</a>
@@ -50,20 +54,19 @@ export default {};
   font-weight: bold;
   font-size: 17px;
 }
-a{
+a {
   color: white;
 }
-#navbarSupportedContent{
+#navbarSupportedContent {
   justify-content: center;
-
 }
-.nav-item{
+.nav-item {
   padding-left: 10px;
-  padding-right:10px
+  padding-right: 10px;
 }
-.navbar-brand{
+.navbar-brand {
   background-color: #f4403b;
-  padding:10px;
+  padding: 10px;
   border-radius: 10px;
   font-weight: bold;
 }
