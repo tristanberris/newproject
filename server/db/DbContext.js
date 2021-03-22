@@ -1,13 +1,10 @@
 import mongoose from "mongoose";
 import ValueSchema from "../models/Value";
-import DrinksSchema from "../models/Drinks";
-import IngredientsSchema from "../models/Ingredients"
-
+import RecipesSchema from "../models/recipe.model";
 
 class DbContext {
   Values = mongoose.model("Value", ValueSchema);
-  Drinks = mongoose.model("Drinks", DrinksSchema);
-  Ingredients = mongoose.model("Ingredients", IngredientsSchema)
+  Recipes = mongoose.model("Recipes", RecipesSchema);
 }
 
 export const dbContext = new DbContext();
