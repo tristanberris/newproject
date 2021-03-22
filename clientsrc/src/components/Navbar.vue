@@ -20,7 +20,7 @@
           </li>
           <li class="nav-item" :class="{ active: $route.name == 'create' }">
             <router-link
-              :to="{ name: 'Create' }"
+              :to="{ name: 'create' }"
               class=" nav-link navbar-brand text-light"
               id="navbar-font"
             >Create</router-link>

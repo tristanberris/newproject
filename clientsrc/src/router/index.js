@@ -8,17 +8,17 @@ import Create from "../views/Create.vue"
 
 Vue.use(Router)
 
-const routes = [
+var routes = [
   {
     path: '/',
     name: 'home',
     component: Home,
   },
   {
-    path: '/:create',
-    name: 'Create',
-
-    component: Create
+    path: '/create',
+    name: 'create',
+    component: Create,
+    props: true,
   },
   {
     path: '/about',
@@ -29,8 +29,13 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
+  },
+  {
+    path: "*",
+    redirect: '/'
   }
 ]
+
 
 const router = new Router({
   routes

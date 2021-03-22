@@ -2,7 +2,8 @@
   <div id="app" class="container-fluid">
     
 
-      <home class="row home" />
+      <!-- <home class="row home" /> -->
+      <router-view></router-view>
 
   </div>
 </template>
