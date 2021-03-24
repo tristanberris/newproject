@@ -11,7 +11,7 @@
             aria-describedby="emailHelp"
             placeholder="Enter recipe name"
             required
-            v-model="recipe.name"
+            v-model="recipe.title"
           />
         </div>
         <form>
@@ -116,7 +116,7 @@ export default {
     addRecipe() {
       // this.recipe.name = "test"
       console.log(this.recipe);
-      // this.$store.dispatch("addRecipe", this.recipe)
+      this.$store.dispatch("addRecipe", this.recipe)
     }
   },
   component:{}

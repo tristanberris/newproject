@@ -25,7 +25,7 @@ export class RecipesController extends BaseController {
       // NOTE NEVER TRUST THE CLIENT TO ADD THE CREATOR ID
       // req.body.creator = req.user.email;
       let data = await recipesService.create(req.body)
-      res.send(req.body);
+      res.send(data);
     } catch (error) {
       next(error);
     }

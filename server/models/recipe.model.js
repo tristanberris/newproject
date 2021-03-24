@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
-const Recipe = new Schema(
+const Recipes = new Schema(
   {
     title: { type: String, required: true },
-    instructions: { type: String, required: true },
+    steps: { type: String, required: true },
     ingredients: { type: String, required: true },
     calorieinfo: { type: String, required: false },
     creatorEmail: { type: String, required: false },
@@ -13,11 +13,11 @@ const Recipe = new Schema(
   { timestamps: true, toJSON: { virtuals: true } }
 );
 
-Recipe.virtual("creator", {
+Recipes.virtual("creator", {
   localField: "creatorEmail",
   ref: "Profile",
   foreignField: "email",
   justOne: true
 });
 
-export default Recipe;
+export default Recipes;
