@@ -8,6 +8,7 @@ export class RecipesController extends BaseController {
     super("api/recipes");
     this.router
       .get("", this.getAll)
+      .get('/:id', this.getById)
       .post("", this.create)
       // NOTE: Beyond this point all routes require Authorization tokens (the user must be logged in)
       // .use(auth0Provider.getAuthorizedUserInfo);
@@ -19,6 +20,12 @@ export class RecipesController extends BaseController {
   } catch (error) {
       next(error);
   }
+  }
+  async getById(req, res, next) {
+    try {
+      let data = await recipesService.getById(req.params.id)
+      return res.send(data)
+    } catch (error) { next(error) }
   }
   async create(req, res, next) {
     try {

@@ -28,6 +28,13 @@ class RecipesService {
       console.error(error);
     }
   }
+  async getById(id) {
+    let data = await dbContext.Recipes.findOne({ _id: id})
+    if (!data) {
+      throw new BadRequest("Invalid ID or you do not own this board")
+    }
+    return data
+  }
 }
 
 export const recipesService = new RecipesService();

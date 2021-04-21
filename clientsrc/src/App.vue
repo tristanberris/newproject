@@ -11,11 +11,13 @@
 
 import Home from "./views/Home"
 import Create from "./views/Create.vue"
+import Recipes from "./views/Recipes.vue"
 
 export default {
     components: {
     Home,
-    Create
+    Create,
+    Recipes
   }
 }
 

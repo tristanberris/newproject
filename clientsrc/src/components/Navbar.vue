@@ -25,6 +25,13 @@
               id="navbar-font"
             >Create</router-link>
           </li>
+          <li class="nav-item" :class="{ active: $route.name == 'recipes' }">
+            <router-link
+              :to="{ name: 'recipes' }"
+              class=" nav-link navbar-brand text-light"
+              id="navbar-font"
+            >Recipes</router-link>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Help</a>
           </li>

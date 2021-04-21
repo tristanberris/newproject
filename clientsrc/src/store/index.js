@@ -16,8 +16,16 @@ let api = Axios.create({
 
 export default new Vuex.Store({
   state: {
+    activeRecipe: {},
+    recipes: []
   },
   mutations: {
+    setActiveRecipe(state, activeRecipe) {
+      state.activeRecipe = activeRecipe
+    },
+    setRecipes(state, recipes){
+      state.recipes = recipes
+    }
   },
   actions: {
     async addRecipe({commit,dispatch}, recipe){
@@ -28,7 +36,26 @@ export default new Vuex.Store({
         console.error(error)
       }
     },
+    async getActiveRecipe({commit, dispatch}, recipeId){
+      try {
+        let res = await api.get(`recipes/${recipeId}`)
+        commit('setActiveRecipe', res.data)
+      } catch (error) {
+        console.error(error)
+      }
+    },
+    async getRecipes({commit, dispatch}){
+      try {
+        let res = await api.get('recipes')
+        console.log(res.data)
+        commit('setRecipes', res.data)
+      } catch (error) {
+        console.error(error)
+      }
+    }
+
   },
+  
   modules: {
   }
 })
