@@ -18,20 +18,20 @@
       :key="recipepreview.id"
     >
       <div class="col-4 pt-2 align">
-
-              <router-link 
-                @click="setActiveRecipe(recipepreview._id)"
-                :to="{name: 'recipe', params: {recipeId: recipepreview.id}}">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="https://picsum.photos/300/300" alt="Card image cap" />
-          <div class="card-body">
-            <!-- <a href="#" class="stretched-link">
-            </a> -->
-            <p class="card-text">{{recipepreview.title}}</p>
-            <!-- <p class="card-text">:)</p> -->
+        <router-link
+          @click="setActiveRecipe(recipepreview._id)"
+          :to="{name: 'recipe', params: {recipeId: recipepreview.id}}"
+        >
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://picsum.photos/300/300" alt="Card image cap" />
+            <div class="card-body">
+              <!-- <a href="#" class="stretched-link">
+              </a>-->
+              <p class="card-text">{{recipepreview.title}}</p>
+              <!-- <p class="card-text">:)</p> -->
+            </div>
           </div>
-        </div>
-              </router-link>
+        </router-link>
       </div>
     </div>
   </div>
