@@ -52,6 +52,15 @@ export default new Vuex.Store({
       } catch (error) {
         console.error(error)
       }
+    },
+    async setActiveRecipe({commit, dispatch}, recipeId){
+      try {
+        let res = await api.get(`recipes/${recipeId}`)
+        commit('setActiveRecipe', res.data)
+        console.log("set recipe", res.data)
+      } catch (error) {
+        console.error(error)
+      }
     }
 
   },

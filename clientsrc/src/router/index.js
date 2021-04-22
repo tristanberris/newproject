@@ -29,6 +29,12 @@ var routes = [
     props: true,
   },
   {
+    path: '/recipes/:recipeId',
+    name: 'recipe',
+    component: Recipes,
+    props: true,
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
