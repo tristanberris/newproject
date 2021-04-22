@@ -2,18 +2,22 @@
   <div id="app" class="container-fluid">
     
 
-      <home class="row home" />
-
+      <!-- <home class="row home" /> -->
+      <router-view></router-view>
 
   </div>
 </template>
 <script>
 
 import Home from "./views/Home"
+import Create from "./views/Create.vue"
+import Recipes from "./views/Recipes.vue"
 
 export default {
     components: {
-    Home
+    Home,
+    Create,
+    Recipes
   }
 }
 
