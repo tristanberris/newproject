@@ -1,16 +1,6 @@
 <template>
   <div class="container-fluid row recipe-container">
-    <!-- <div class="col-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://picsum.photos/300/300" alt="Card image cap" />
-        <div class="card-body">
-          <p
-            class="card-text"
-          >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>-->
-
+    <navbar class="col-12  "></navbar>
     <div
       class
       v-for="recipepreview in recipepreviews"
@@ -22,8 +12,8 @@
           @click="setActiveRecipe(recipepreview._id)"
           :to="{name: 'recipe', params: {recipeId: recipepreview.id}}"
         >
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://picsum.photos/300/300" alt="Card image cap" />
+          <div class="card card-shadow" style="width: 18rem;">
+            <img class="card-img-top card-image" :src="recipepreview.image" alt="Card image cap" />
             <div class="card-body">
               <!-- <a href="#" class="stretched-link">
               </a>-->
@@ -58,5 +48,17 @@ export default {
 <style>
 .recipe-container {
   justify-content: center;
+}
+.card-image{
+  object-fit: cover;
+  width: 100%;
+  max-height: 220px;
+}
+.card-shadow{
+}
+.card-shadow:hover{
+  box-shadow: 6px 6px rgb(128, 128, 128);
+  transition: background-color .4s;
+
 }
 </style>

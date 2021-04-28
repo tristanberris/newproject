@@ -16,6 +16,7 @@
       <div class="col-12">
         <ol type="1">
           <li class="ingredients-list">Lorem ipsum dolor sit amet.</li>
+          <li class="ingredients-list">{{recipe.steps}}</li>
           <li class="ingredients-list">Lorem ipsum dolor sit amet.</li>
           <li class="ingredients-list">Lorem ipsum dolor sit amet.</li>
         </ol>
@@ -24,15 +25,21 @@
     <div class="row calorie-info-parent">
       <div class="col-10 calorie-info">
         <h3 style="text-decoration:underline">Calorie Information</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur velit facere reprehenderit provident assumenda, amet repellat eius aspernatur quam quidem maiores id autem in eum alias necessitatibus, dolores ut quod!</p>
+        <p>{{recipe.calorieinfo}}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Recipe from "../views/Recipe.vue"
 export default {
-  name: "RightSide"
+  name: "RightSide",
+  computed:{
+    recipe(){
+        return this.$store.state.activeRecipe
+    }
+},
 };
 </script>
 

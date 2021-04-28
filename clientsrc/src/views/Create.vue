@@ -1,5 +1,7 @@
 <template>
-  <div class="row justify-content-center">
+  <div class="container-fluid">
+    <navbar></navbar>
+    <div class="row justify-content-center">
     <div class="col-10">
       <form class @submit.prevent="addRecipe()">
         <div class="form-group">
@@ -17,7 +19,7 @@
         <form>
           <div class="form-group">
             <label for="exampleFormControlFile1">Image of Recipe</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1" />
+            <input type="text" class="form-control" id="exampleFormControlFile1" placeholder="Copy/Paste image URL" required v-model="recipe.image" />
           </div>
         </form>
         <div class="form-group">
@@ -72,6 +74,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+    </div>
     </div>
   </div>
 </template>
