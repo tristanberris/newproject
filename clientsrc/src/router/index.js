@@ -16,6 +16,7 @@ var routes = [
     name: 'home',
     component: Home,
   },
+  
  
   {
     path: '/create',

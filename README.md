@@ -36,7 +36,7 @@ It will allow users to create their own recipes in a simple, easy-to-use recipe 
 - [x] recipes have dynamic links on creation
 - [x] user can create recipes
 - [ ] User can add multiple ingredients and steps
-- [ ] Pressing the logo or 'home' button returns user to landing page
+- [x] Pressing the logo or 'home' button returns user to landing page
 
 #### Landing Page
 
