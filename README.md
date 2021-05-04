@@ -27,12 +27,16 @@ It will allow users to create their own recipes in a simple, easy-to-use recipe 
 - [x] Create mobile view
 - [ ] Add home landing page
 - [x] Add gallery of all recipes in database
+- [ ] Make 'create' page look good. It looks terrible right now.
+- [ ] Create 'about' page
+    - about page has my face on it :)
 
 ### Back-End
 
-- [x] allow every recipe to have dynamic link on creation
-- [x] allow recipes to be created
-- [ ] allow user to add multiple ingredients and steps
+- [x] recipes have dynamic links on creation
+- [x] user can create recipes
+- [ ] User can add multiple ingredients and steps
+- [ ] Pressing the logo or 'home' button returns user to landing page
 
 #### Landing Page
 
