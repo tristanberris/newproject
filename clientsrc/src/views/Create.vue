@@ -1,5 +1,7 @@
 <template>
-  <div class="row justify-content-center">
+  <div class="container-fluid">
+    <navbar></navbar>
+    <div class="row justify-content-center">
     <div class="col-10">
       <form class @submit.prevent="addRecipe()">
         <div class="form-group">
@@ -17,7 +19,7 @@
         <form>
           <div class="form-group">
             <label for="exampleFormControlFile1">Image of Recipe</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1" />
+            <input type="text" class="form-control" id="exampleFormControlFile1" placeholder="Copy/Paste image URL" required v-model="recipe.image" />
           </div>
         </form>
         <div class="form-group">
@@ -73,6 +75,7 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
+    </div>
   </div>
 </template>
 
@@ -93,20 +96,10 @@ export default {
 
   methods: {
     addStep() {
-      // var x=1;
-      // var stepNum = document.getElementById('stepNumber')
-      // stepNum.innerHTML = x++;
-      //  console.log(x)
       var d = document.getElementById("addStep");
       d.innerHTML +=
         '<div><div id="stepNumber" value="1"></div></div><input class="form-control form-control-sm mb-1"  type="text" placeholder="Add Current Step">';
-      //  x++;
-      // var value = parseInt(document.getElementById('stepNumber').value, 10);
-      // value = isNaN(value) ? 1 : value;
-      // console.log(value)
-      // value++;
-      // document.getElementById('stepNumber').value = value;
-      // console.log(value)
+
     },
     addIngredient() {
       var d = document.getElementById("addIngredient");

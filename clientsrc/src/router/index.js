@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '../views/Home.vue'
 import Create from "../views/Create.vue"
 import Recipes from "../views/Recipes.vue"
+import Recipe from "../views/Recipe.vue"
 
 
 
@@ -26,6 +27,12 @@ var routes = [
     path: '/recipes',
     name: 'recipes',
     component: Recipes,
+    props: true,
+  },
+  {
+    path: '/recipes/:recipeId',
+    name: 'recipe',
+    component: Recipe,
     props: true,
   },
   {

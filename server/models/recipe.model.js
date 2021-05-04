@@ -7,7 +7,9 @@ const Recipes = new Schema(
     steps: { type: String, required: true },
     ingredients: { type: String, required: true },
     calorieinfo: { type: String, required: false },
+    image: { type: String, required: true },
     creatorEmail: { type: String, required: false },
+
     // recipeId: { type: ObjectId, ref: 'Recipe', required: true }
   },
   { timestamps: true, toJSON: { virtuals: true } }

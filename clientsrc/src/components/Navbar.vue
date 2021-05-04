@@ -11,7 +11,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon burger">x.x</span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -21,24 +21,21 @@
           <li class="nav-item" :class="{ active: $route.name == 'create' }">
             <router-link
               :to="{ name: 'create' }"
-              class=" nav-link navbar-brand text-light"
+              class=" nav-link  text-light"
               id="navbar-font"
             >Create</router-link>
           </li>
           <li class="nav-item" :class="{ active: $route.name == 'recipes' }">
             <router-link
               :to="{ name: 'recipes' }"
-              class=" nav-link navbar-brand text-light"
+              class=" nav-link  text-light"
               id="navbar-font"
             >Recipes</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Help</a>
+            <a class="nav-link" href="#">About</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -76,5 +73,8 @@ a {
   padding: 10px;
   border-radius: 10px;
   font-weight: bold;
+}
+.burger{
+  color: white;
 }
 </style>
