@@ -1,15 +1,11 @@
 <template>
   <div class="home container-fluid row">
-    <div class="col-9">
-      <navbar class="row mb-3 mt-1" />
-      <div class="left-side mb-5">
-        <leftside></leftside>
-      </div>
+    <div class="col-12">
+    <navbar> </navbar>
+      <p>
+        Welcome to SimpleChef!
+      </p>
     </div>
-    <div class="col-3 right-side">
-      <rightside></rightside>
-    </div>
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
