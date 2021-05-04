@@ -36,5 +36,5 @@ It will allow users to create their own recipes in a simple, easy-to-use recipe 
 
 #### Landing Page
 
-- [] "sleek" video plays on website load
-- 
+- [ ] "sleek" video plays on website load
+- [ ]
