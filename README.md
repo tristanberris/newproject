@@ -23,7 +23,18 @@ It will allow users to create their own recipes in a simple, easy-to-use recipe 
 ## TO-DO List
 ### Front-End
 
-- [ ] Build basic recipe page
-- [ ] 
+- [x] Build basic recipe page
+- [x] Create mobile view
+- [ ] Add home landing page
+- [x] Add gallery of all recipes in database
 
 ### Back-End
+
+- [x] allow every recipe to have dynamic link on creation
+- [x] allow recipes to be created
+- [ ] allow user to add multiple ingredients and steps
+
+#### Landing Page
+
+- [] "sleek" video plays on website load
+- 
